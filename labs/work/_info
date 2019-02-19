@@ -8,3 +8,113 @@ z2
 !i10f 100
 cModel Technology
 dC:/Modeltech_pe_edu_10.4a/examples
+vDFF
+!s110 1550608746
+!i10b 1
+!s100 T8oE8RF^kaE=hI:6;mn[<3
+I5=]dRKoPED05<fFmn9J7E0
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Users/Pro/Desktop/cs147/labs
+Z2 w1550607517
+8C:/Users/Pro/Desktop/cs147/labs/lab_02/dff.v
+FC:/Users/Pro/Desktop/cs147/labs/lab_02/dff.v
+L0 19
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1550608746.000000
+!s107 C:/Users/Pro/Desktop/cs147/labs/lab_02/dff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Pro/Desktop/cs147/labs/lab_02/dff.v|
+!s101 -O0
+!i113 1
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@d@f@f
+vINVERTER
+!s110 1550608749
+!i10b 1
+!s100 6ffoCje:7fQL[NBzHmz<n2
+I43E=HKRlMC2UkfObUH73;2
+R0
+R1
+R2
+8C:/Users/Pro/Desktop/cs147/labs/lab_02/inv.v
+FC:/Users/Pro/Desktop/cs147/labs/lab_02/inv.v
+L0 16
+R3
+r1
+!s85 0
+31
+!s108 1550608749.000000
+!s107 C:/Users/Pro/Desktop/cs147/labs/lab_02/inv.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Pro/Desktop/cs147/labs/lab_02/inv.v|
+!s101 -O0
+!i113 1
+R4
+n@i@n@v@e@r@t@e@r
+vRIPPLE_COUNTER
+!s110 1550608752
+!i10b 1
+!s100 kEPFFOIRVNY;c_olXVZ0d0
+IXN_<FK`[<4OMU`67dVKEi1
+R0
+R1
+R2
+8C:/Users/Pro/Desktop/cs147/labs/lab_02/rcounter.v
+FC:/Users/Pro/Desktop/cs147/labs/lab_02/rcounter.v
+Z5 L0 17
+R3
+r1
+!s85 0
+31
+!s108 1550608752.000000
+!s107 C:/Users/Pro/Desktop/cs147/labs/lab_02/rcounter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Pro/Desktop/cs147/labs/lab_02/rcounter.v|
+!s101 -O0
+!i113 1
+R4
+n@r@i@p@p@l@e_@c@o@u@n@t@e@r
+vRIPPLE_COUNTER_TB
+!s110 1550608756
+!i10b 1
+!s100 NF;54^X[3oOek=[oR=^Um3
+IOK[ZjJ5HkBF7082m>S@WP3
+R0
+R1
+R2
+8C:/Users/Pro/Desktop/cs147/labs/lab_02/rcounter_tb.v
+FC:/Users/Pro/Desktop/cs147/labs/lab_02/rcounter_tb.v
+L0 14
+R3
+r1
+!s85 0
+31
+!s108 1550608756.000000
+!s107 C:/Users/Pro/Desktop/cs147/labs/lab_02/rcounter_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Pro/Desktop/cs147/labs/lab_02/rcounter_tb.v|
+!s101 -O0
+!i113 1
+R4
+n@r@i@p@p@l@e_@c@o@u@n@t@e@r_@t@b
+vTFF
+!s110 1550608761
+!i10b 1
+!s100 dL`i0dejjcd9b74_=7iHg1
+I3kV<om4Uk26WV[MdT5WF^0
+R0
+R1
+R2
+8C:/Users/Pro/Desktop/cs147/labs/lab_02/tff.v
+FC:/Users/Pro/Desktop/cs147/labs/lab_02/tff.v
+R5
+R3
+r1
+!s85 0
+31
+!s108 1550608761.000000
+!s107 C:/Users/Pro/Desktop/cs147/labs/lab_02/tff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Pro/Desktop/cs147/labs/lab_02/tff.v|
+!s101 -O0
+!i113 1
+R4
+n@t@f@f
