@@ -143,24 +143,52 @@ pass_test = 0;
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
 
-// b0001(1) && b0001(1) = b0001(1) (16)
+// b0001(1) && b0001(1) = b0001(1) 
 #5  op1_reg='b0001;
     op2_reg='b0001;
     oprn_reg=`ALU_OPRN_WIDTH'h06;   
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
 
-// b0000(0) && b0000(0) = b0000(0) (16)
+// b0000(0) && b0000(0) = b0000(0) 
 #5  op1_reg='b0000;
     op2_reg='b0000;
     oprn_reg=`ALU_OPRN_WIDTH'h06;   
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
 
-// b0000(0) && b1111(0) = b0000(0) (16)
+// b0000(0) && b1111(0) = b0000(0) (0)
 #5  op1_reg='b0000;
     op2_reg='b1111;
     oprn_reg=`ALU_OPRN_WIDTH'h06;   
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+
+// b0000(0) || b0000(0) = b0000(0) 
+#5  op1_reg='b0000;
+    op2_reg='b0000;
+    oprn_reg=`ALU_OPRN_WIDTH'h07;   
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+
+// b0000(0) || b0000(0) = b0000(0) (1)
+#5  op1_reg='b0000;
+    op2_reg='b0000;
+    oprn_reg=`ALU_OPRN_WIDTH'h07;   
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+
+// b0000(0) || b1111(0) = b1111(0) (15)
+#5  op1_reg='b0000;
+    op2_reg='b1111;
+    oprn_reg=`ALU_OPRN_WIDTH'h07;   
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+
+// 0 || ~15 = 15
+#5  op1_reg=0;
+    op2_reg=~15;
+    oprn_reg=`ALU_OPRN_WIDTH'h08;   
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
 
