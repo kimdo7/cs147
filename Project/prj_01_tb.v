@@ -192,12 +192,27 @@ pass_test = 0;
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
 
-// 0 || MAX = 0
-#5  op1_reg=0;
-    op2_reg=MAX;
-    oprn_reg=`ALU_OPRN_WIDTH'h08;   
+// 1 < 2 = 1 (TRUE)
+#5  op1_reg=1;
+    op2_reg=2;
+    oprn_reg=`ALU_OPRN_WIDTH'h09;   
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+
+// 1 < 1 = 0 (FALSE)
+#5  op1_reg=1;
+    op2_reg=1;
+    oprn_reg=`ALU_OPRN_WIDTH'h09;   
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+
+// 5 < 1 = 0 (FALSE)
+#5  op1_reg=5;
+    op2_reg=1;
+    oprn_reg=`ALU_OPRN_WIDTH'h09;   
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+
 
 // 
 // TBD: Fill out for other operations
