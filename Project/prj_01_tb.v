@@ -192,6 +192,13 @@ pass_test = 0;
 #5  test_and_count(total_test, pass_test, 
                    test_golden(op1_reg,op2_reg,oprn_reg,r_net));
 
+// 0 || MAX = 0
+#5  op1_reg=0;
+    op2_reg=MAX;
+    oprn_reg=`ALU_OPRN_WIDTH'h08;   
+#5  test_and_count(total_test, pass_test, 
+                   test_golden(op1_reg,op2_reg,oprn_reg,r_net));
+
 // 
 // TBD: Fill out for other operations
 //
